@@ -1,0 +1,16 @@
+Si querés ir directo a la verdad de la milanga scrollea pa´ joba. Si te interesa toda la historieta, segui leyendo.
+Soy de Mardelplata, donde los dos servicios mas populares son Speedy y Fibertel. Estoy en una zona centrica, donde el funcionamiento de Speedy es mas que aceptable, pero el precio ya no me convenia tanto y estaba harto de los problemas generales que se generaban cada tanto, asi que decidi pasarme a Fibertel. Me lo instalaron hace casi un mes, y tenia problemas con la velocidad de subida, de bajada andaba barbaro. Reclamo, y viene el tecnico y lo solucionó cambiando el modem, y me puso un Motorola SBG6580, con tecnologia EuroDocsis 3.0.
+Hasta ahi todo barbaro, hasta que quise utilizar WiFi. Un asco total, no navegaba nada. Intente hacer un speedtest con mi celular y me tiraba 0,2megabits, cuando tengo un servicio de 12mb. Despues de resetear el modem una y otra vez, y toquetear configuraciones, encontre en un foro una posible solucion y decidi probarla.
+
+
+La verdad de la milanga:
+Desconectar el cable coaxil del modem, y resetearlo a fabrica mantiendo presionado el botoncito "oculto" con una lapicera durante 10 segundos.
+Abrir un navegador y entrar a 192.168.0.1
+Usuario admin - contraseña motorola
+Vayan al menu de Firewall y desactiven Ip Flood Detection...( Yo tambien desactive el firewall protection x las dudas)
+Vayan al menu de Wireless y configuran N-mode: auto, Bandwidth: 40mhz, channel: ( aca elijan el q les convenga a uds, es para que no haga interferencia con los wifis de sus vecinos, yo lo deje en 1 en mi caso )
+Vayan a Advance, dentro de Wireless, y configuran asi: Xpress Technology: enabled, Beacon Interval :50, DTIM interval: 1, Fragmentation Threshold: 2307, RTS Threshold: 2306, N rate: 6mbps, 802.11n protection: off, Multicast rate:1mbps.
+
+Tengan en cuenta que al volver el modem a valores de fabrica han perdido el nombre de su red wifi y su contraseña, vuelvan a configurarlos desde el menu de Primary Network dentro de Wireless, y acuerdense de desactivar el WPS que se encuentra a la derecha dentro de ese menu.
+
+Una vez realizado todo esto, dan click en Logout, arriba a la derecha, desconectan el modem de la corriente, conectan el cable coaxil nuevamente, y enchufan el modem y listo. Intenten conectarse a su red wifi y prueben como les funciona. A mi me dio muy buenos resultados. 
